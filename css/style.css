@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #333333;
+    --primary-light: #ffffff;
+    --muted-grey: #5D82E0;
+    --accent-blue: #E6F0FF;
+    --secondary-color: #B5D8FD;
+    --heading-font: 'Quicksand', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+    --link-fonts: 'Inter', sans-serif;
+    --Contacts-fonts: "Goldman", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-light);
+    font-family: var(--body-font);
+    color: var(--primary-color);
+}
+
+.container {
+    margin: 0 auto;
+    width: 70%;
+    background-color: var(--primary-light);
+}
+
+header {
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    background-color: var(--muted-grey);
+
+}
+
+header h3 {
+    font-family: var(--heading-font);
+    font-size: 1.7rem;
+    text-decoration: underline;
+}
+
+.image-container {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    margin: 2rem;
+}
+
+.CV-image img{
+    width: 90%;
+    height: 290px;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: 50% 22%;
+}
+
+.Contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 2.2rem;
+    width: 100%;
+    height: 80%;
+}
+
+.contact-list-title {
+    margin: 0, auto;
+    background-color: var(--primary-light);
+    text-align: center;
+    padding-top: 5%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-family: var(--Contacts-fonts);
+    font-size: 2rem;
+    font-weight: 100;
+    color: var(--accent-blue)_
+}
+
+
+.Contact-list {
+    list-style: none;
+    display: inline;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-family: var(--Contacts-fonts);
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding: 1rem;
+    background-color: var(--primary-light);
+}
+
+.Contact-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    font-family: var(--Contacts-fonts);
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding: 1rem;
+    background-color: var(--primary-light);
+}
+
+.Contact-list li span {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Contact-list li i {
+    width: 25px;
+    text-align: center;
+}
+
+.activity-box {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    background-color: var(--accent-blue);
+    font-family: var(--link-fonts);
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    width: 100%;
+    height: auto;
+}
+
+.About-Me {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 3rem;
+    width: 100%;
+    height: 90%;
+}
+
+.main-title {
+    grid-row: 1/2;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.About-Me-text {
+    grid-row: 2/3;
+    font-family: var(--body-font);
+    font-weight: 400;
+    line-height: 2;
+}
+
+.education-and-language {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+}
+
+.Education {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    padding: 2rem;
+}
+
+.Education-list-title {
+    grid-row: 1/2;
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.Education-list {
+    padding: 2rem 0;
+    line-height: 2;
+    list-style: none;
+}
+
+.Languages {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    padding: 1.5rem;
+}
+
+.Languages-title {
+    grid-row: 1/2;
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.Languages-list {
+    list-style: none;
+    padding: 1rem;
+    font-weight: 700;
+    line-height: 2;
+    
+}
+
+.Experience {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 2.5rem;
+    width: 100%;
+    height: auto;
+}
+
+.Experience-list {
+    list-style: none;
+    grid-row: 2/3;
+    font-family: var(--body-font);
+    font-weight: 300;
+    line-height: 3;
+    padding: 1.5rem 0;
+}
+
+.Skill {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 3rem;
+    width: 100%;
+    height: auto;
+}
+
+.Skill-list {
+    list-style: none;
+    grid-row: 2/3;
+    font-family: var(--body-font);
+    font-weight: 500;
+    line-height: 2;
+    padding: 1.8rem 0;
+}
+
+.Certificates {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 3rem;
+    width: 100%;
+    height: auto;    
+}
+
+.Certificates-list {
+    list-style: none;
+    grid-row: 2/3;
+    font-family: var(--body-font);
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 1.8rem 0;
+}
+
+.More-Info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+}
+
+.more-info-main-title {
+    text-align: center;
+    grid-column: 2/3;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    text-decoration: underline;
+    padding: 2rem 0;
+}
+
+.Hobbies {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 2.2rem;
+    width: 100%;
+    height: auto;
+    grid-column: 1/2;
+    grid-row: 2/3
+}
+
+.Hobbies-list-title {
+    font-family: var(--heading-font);
+    font-size: 1.7rem;
+    text-decoration: underline;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.Hobbies-list-elements {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    list-style: none;
+    font-family: var(--body-font);
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    list-style-type: disc;
+    padding: 1.8rem 0;
+}
+
+.Strengths {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 2.2rem;
+    width: 100%;
+    height: auto;
+    grid-column: 2/3;
+    grid-row: 2/3
+}
+
+.Strengths-list-title {
+    font-family: var(--heading-font);
+    font-size: 1.7rem;
+    text-decoration: underline;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.Strength-list-elements {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    list-style: none;
+    font-family: var(--body-font);
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    list-style-type: disc;
+    padding: 1.8rem 0;
+}
+
+.Weaknesses {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 2.2rem;
+    width: 100%;
+    height: auto;
+    grid-column: 3/4;
+    grid-row: 2/3
+}
+
+.Weaknesses-list-title {
+    font-family: var(--heading-font);
+    font-size: 1.7rem;
+    text-decoration: underline;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.Weaknesses-list-elements {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    list-style: none;
+    font-family: var(--body-font);
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    list-style-type: disc;
+    padding: 1.8rem 0;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: var(--muted-grey);
+    padding: 2rem;
+}
+
+.social-media-list, .Contact-links-list {
+    width: 85%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    padding: 4rem;
+}
+
+.social-media-list li a {
+    font-size: 5rem;
+    color: var(--accent-blue);
+}
+
+.Contact-links-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 2rem;
+    color: var(--accent-blue);
+    margin: 4rem auto;
+}
+
+.Contact-links-list li a {
+    text-decoration: none;
+    color: var(--accent-blue);
+    font-family: var(--link-fonts);
+    font-size: 1.2rem;
+}
+
+.copyright {
+    color: var(--accent-blue);
+}
+
+hr {
+    width: 700px;
+    height: 3px;
+    margin: 0 auto;
+    border: none;
+    border-top: 4px solid var(--accent-blue);
+    border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    
