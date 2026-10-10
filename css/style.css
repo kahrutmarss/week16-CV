@@ -442,12 +442,160 @@ hr {
 @media (max-width: 480px) {
     .container {
         width: 100%;
+        padding: 0;
+    }
+
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        height: auto;
         padding: 1rem;
     }
 
-    header {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, auto);
+   
+    .image-container {
+        width: 100%;
+        height: auto;
+        margin: 1rem 0;
     }
+
+    .CV-image img {
+        width: 80%;
+        height: 240px;
+        object-fit: cover;
+    }
+
+    .Contacts {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .contact-list-title {
+        background: #fff;
+        border: none;
+        margin: 0;
+        padding: 1.25rem 1rem;
+    }
+
+    .Contact-list {
+        background: #fff;
+        border: none;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+
+    .About-Me {
+        grid-template-rows: auto auto;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .main-title {
+        padding: 0,5rem;
+    } 
+
+    .About-Me-text {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+
+
+    .education-and-language {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        padding: 1rem;
+    }
+
+    .Education,
+    .Languages {
+        grid-column: 1;
+        padding: 1rem;
+    }
+
+    .Languages {
+        grid-row: 2;
+    }
+
+    .Experience,
+    .Skill,
+    .Certificates {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .More-Info {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        padding: 1rem;
+    }
+
+    .more-info-main-title {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .Hobbies,
+    .Strengths,
+    .Weaknesses {
+        grid-column: 1;
+        padding: 1rem;
+    }
+
+    .Hobbies {
+        grid-row: 2;
+    }
+
+    .Strengths {
+        grid-row: 3;
+    }
+
+    .Weaknesses {
+        grid-row: 4;
+    }
+
+    .activity-box {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto;
+        gap: 1rem;
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+
+    hr {
+        width: 90%;
+    }
+
+    .social-media-list,
+    .Contact-links-list {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .social-media-list li a {
+        font-size: 2rem;
+    }
+
+    .Contact-links-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 1rem auto;
+    }
+}
 
     
