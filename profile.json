@@ -1,0 +1,58 @@
+{
+  "name": "Mart Mardisalu",
+  "profile": [
+    {
+      "icon": "fa-solid fa-city",
+      "value": "Tallinn, Harjumaa, Eesti"
+    },
+    {
+      "icon": "fa-solid fa-phone",
+      "value": "+372 5555 5555"
+    },
+    {
+      "icon": "fa-solid fa-envelope",
+      "value": "example@gmail.com"
+    },
+    {
+      "icon": "fa-brands fa-linkedin",
+      "value": "Mart.Mardisalu"
+    }
+  ],
+  "aboutMe": {
+    "title": "About Me",
+    "text": "Motivated and detail-oriented Mechanical Engineering student with a strong interest in engineering design, manufacturing, and problem-solving. Currently developing a solid foundation in mechanical systems, materials, CAD, and engineering principles through academic study and practical projects. A reliable and analytical team player with a willingness to learn, take on new challenges, and apply theoretical knowledge to real-world engineering problems. Seeking opportunities to gain practical experience and further develop technical skills within the engineering industry."
+  }
+,
+  "experience": {
+    "title": "Experience",
+    "categories": [
+      {
+        "title": "Previous contract work",
+        "items": [
+          "No previous contract work"
+        ]
+      },
+      {
+        "title": "Gigwork",
+        "items": [
+          "10 July 2026 - Punch club | Tallinn | Assembly line worker"
+        ]
+      },
+      {
+        "title": "Voluntary work",
+        "items": [
+          "5. august 2022 - IRON MAN | Tallinn | volunteer | Track assembly",
+          "20. june 2023 - Rehvid.com | Tallinn | volunteer | Tire warehouse helper",
+          "21. November 2024 - Finnish Embassy | Tallinn | volunteer | waiter/bartender",
+          "12. july 2025 - Truck company | Germany | volunteer | Truck driver assistant"
+        ]
+      },
+      {
+        "title": "Other",
+        "items": [
+          "Mandatory Military service"
+        ]
+      }
+    ]
+  }
+}
