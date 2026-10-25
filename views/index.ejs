@@ -18,8 +18,23 @@
 
             </div>
 
+        <div class="Contacts">
+            <h2 class="contact-list-title"><%= cv.name %></h2>
 
-            <div class="Contacts" id="profile"></div>
+            <ul class="Contact-list">
+                <% cv.profile.forEach(contact => { %>
+                    <li>
+                        <span>
+                            <i class="<%= contact.icon %>"></i>
+                            <h4 class="Contacts-list-element-title">
+                                <%= contact.value %>
+                            </h4>
+                        </span>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+            <!-- <div class="Contacts" id="profile"></div> -->
 
         
 
@@ -38,7 +53,14 @@
 
         <section class="main">
 
-            <div class="About-Me" id="about-me"></div>
+            <div class="About-Me">
+                <h2 class="main-title"><%= cv.aboutMe.title %></h2>
+
+                <p class="About-Me-text">
+                    <%= cv.aboutMe.text %>
+                </p>
+            </div>
+            <!-- <div class="About-Me" id="about-me"></div> -->
 
             <hr>
 
@@ -84,7 +106,37 @@
 
             <hr>
 
-            <div class="Experience" id="experience"></div>
+
+            <div class="Experience">
+                <h2 class="main-title"><%= cv.experience.title %></h2>
+
+                <div class="Experience-list">
+                    <ul class="Experience-list">
+
+                        <% cv.experience.categories.forEach(category => { %>
+                            <li>
+                                <% if (category.title !== "Previous contract work" &&
+                                category.title !== "Other") { %>
+
+                                    <h4 class="Experience-list-element-overview">
+                                        <%= category.title %>:
+                                    </h4>
+
+                                <% } %>
+
+                                <% category.items.forEach(item => { %>
+                                    <h4 class="Experience-list-element-title">
+                                        <%= item %>
+                                    </h4>
+                                <% }); %>
+                            </li>
+                        <% }); %>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <div class="Experience" id="experience"></div> -->
             
             <hr>
 
